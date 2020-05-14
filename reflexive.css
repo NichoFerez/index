@@ -93,17 +93,17 @@ h2{
 
 
 .row1{
-margin-left:50px;
+margin-left:70px;
 display:flex;
 flex-direction:row;
 }
 .row2{
-margin-left:50px;
+margin-left:70px;
 display:flex;
 flex-direction:row;
 }
 .parent{
-margin-left:100px;
+margin-left:140px;
 margin-bottom:50px;
 
 
