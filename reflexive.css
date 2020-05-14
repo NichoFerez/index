@@ -13,6 +13,14 @@ src: url("PosterBoy.otf") format("opentype");
     animation-iteration-count: infinite ;
     animation-direction: alternate ;
     position:relative;
+    z-index:9;
+}
+
+
+
+img{
+	height:90%;
+	width:90%;
 }
 
 body{
@@ -29,29 +37,34 @@ body{
    50% { border-color: white; } 
 }
 
+.nicho{
+	margin-bottom:-30px;
+	margin-left:30px;
+}
+
 .name{
-	z-index:1;
+	z-index:10;
 	display:flex;
-	flex-direction:row;
+	flex-direction:column;
 	justify-content:space-around;
 	border:3px solid black;
-	margin-left:-1px;
-	margin-right:-1px;
-	margin-top:0px;
-	margin-bottom:30px;
 	background-color:#f0f0f0;
 	position: sticky; 
   position: sticky;
   top: 0;
+  margin-bottom:30px;
 
 }
 .click{
+	align-self:flex-end;
 	height:60px;
 	width:150px;
+	margin-right:43px;
+margin-top:-50px;
+margin-bottom:30px;
 	border:2px solid black;
-	margin-top:25px;
-	margin-left:1000px;
-	margin-right:-20px;
+
+
 
 }
 h3{
@@ -64,7 +77,8 @@ h1{
 		color:black;
 	font-family: 'PosterBoy', sans-serif;
 	font-size:50px;
-margin-left:-40px;
+	margin-bottom:25px;
+
 }
 
 h2{
@@ -77,102 +91,57 @@ h2{
 	border:3px solid black;
 }
 
-.projects{
-	
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin-top:-20px;
-	grid-gap:2px;
-}
 
-.project1{
-position:relative;
-	height:600px;
-	width:825px;
-	border:3px solid black;
-	grid-column-start: 1;
-  grid-column-end:2;
-grid-row-start: 1;
-  grid-row-end: 2;
+.row1{
+margin-left:50px;
+display:flex;
+flex-direction:row;
+}
+.row2{
+margin-left:50px;
+display:flex;
+flex-direction:row;
+}
+.parent{
+margin-left:100px;
+margin-bottom:50px;
+
 
 }
 
-img{
-	height:90%;
-	width:90%;
-	border:3px solid black;
-		margin-top:30px;
-	margin-left:35px;
-}
-
-.project2{
-	position:relative;
-	height:600px;
-	width:827px;
-	border:2px solid black;
-	grid-column-start: 2;
-  grid-column-end:2;
-grid-row-start: 1;
-  grid-row-end: 2;
-}
-.project3{
-	position:relative;
-	height:600px;
-	width:827px;
-	border:2px solid black;
-	grid-column-start: 1;
-  grid-column-end:4;
-grid-row-start: 2;
-  grid-row-end: 2;
-}
-.project4{
-		position:relative;
-	height:600px;
-	width:827px;
-	border:2px solid black;
-	grid-column-start: 2;
-  grid-column-end:4;
-grid-row-start: 3;
-  grid-row-end: 2;
-}
-.project5{
-		position:relative;
-	height:600px;
-	width:827px;
-	border:2px solid black;
-	grid-column-start: 1;
-  grid-column-end:1;
-grid-row-start: 4;
-  grid-row-end: 4;
-}
-p{
-	margin-left:30px;
-font-family: 'Courier Prime', monospace;
-	font-size:20px;
-}
-
-.name2{
-	margin-top:0px;
-	border:1px solid black;
-}
-
-@media (max-width:1200px){
-
-	@font-face{
+@media (max-width:800px){
+@font-face{
 	font-family: "PosterBoy";
 src: url("PosterBoy.otf") format("opentype");
 }
 
-body{
+
+
+.everything{
 	border:8px black solid;
-	margin-top:0px;
-	margin-left:0px;
-	margin-right:0px;
 	animation-name: blink ;
     animation-duration: .07s ;
     animation-timing-function: step-end ;
     animation-iteration-count: infinite ;
     animation-direction: alternate ;
+    position:relative;
+    z-index:9;
+}
+
+
+
+img{
+	height:90%;
+	width:90%;
+}
+
+body{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	animation-name: blink ;
+    animation-duration: .07s ;
+
     background-color:#d4d4d4;
 }
 
@@ -180,24 +149,48 @@ body{
    50% { border-color: white; } 
 }
 
+.nicho{
+	margin-bottom:-30px;
+	margin-left:30px;
+}
+
 .name{
+	z-index:10;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
 	border:3px solid black;
-	margin-left:-1px;
-	margin-right:-1px;
-	margin-top:0px;
-	margin-bottom:30px;
 	background-color:#f0f0f0;
 	position: sticky; 
   position: sticky;
   top: 0;
+  margin-bottom:30px;
 
+}
+.click{
+	align-self:flex-end;
+	height:60px;
+	width:150px;
+	margin-right:43px;
+margin-top:-50px;
+margin-bottom:30px;
+	border:2px solid black;
+
+
+
+}
+h3{
+font-family: 'Courier Prime', monospace;
+margin-top:20px;
+margin-left:27px;
 }
 
 h1{
 		color:black;
 	font-family: 'PosterBoy', sans-serif;
 	font-size:50px;
-	margin-left:30px;
+	margin-bottom:25px;
+
 }
 
 h2{
@@ -210,76 +203,22 @@ h2{
 	border:3px solid black;
 }
 
-.projects{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin-top:-20px;
-	grid-gap:2px;
+
+.row1{
+margin-left:50px;
+display:flex;
+flex-direction:column;
+}
+.row2{
+margin-left:50px;
+display:flex;
+flex-direction:column;
+}
+.parent{
+margin-left:50px;
+margin-bottom:50px;
+
+
 }
 
-.project1{
-	height:600px;
-	width:485px;
-	border:3px solid black;
-	grid-column-start: 1;
-  grid-column-end:2;
-grid-row-start: 1;
-  grid-row-end: 2;
-
-}
-
-img{
-	height:90%;
-	width:90%;
-	border:3px solid black;
-		margin-top:30px;
-	margin-left:20px;
-}
-
-.project2{
-	height:600px;
-	width:485px;
-	border:2px solid black;
-	grid-column-start: 2;
-  grid-column-end:2;
-grid-row-start: 1;
-  grid-row-end: 2;
-}
-.project3{
-	height:600px;
-	width:485px;
-	border:2px solid black;
-	grid-column-start: 1;
-  grid-column-end:4;
-grid-row-start: 2;
-  grid-row-end: 2;
-}
-.project4{
-	height:600px;
-	width:485px;
-	border:2px solid black;
-	grid-column-start: 2;
-  grid-column-end:4;
-grid-row-start: 3;
-  grid-row-end: 2;
-}
-.project5{
-	height:600px;
-	width:485px;
-	border:2px solid black;
-	grid-column-start: 1;
-  grid-column-end:1;
-grid-row-start: 4;
-  grid-row-end: 4;
-}
-p{
-	margin-left:30px;
-font-family: 'Courier Prime', monospace;
-	font-size:20px;
-}
-
-.name2{
-	margin-top:0px;
-	border:1px solid black;
-}
 }
