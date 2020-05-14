@@ -62,16 +62,29 @@ body{
 	margin-right:43px;
 margin-top:-50px;
 margin-bottom:30px;
-	border:2px solid black;
-
 
 
 }
-h3{
-font-family: 'Courier Prime', monospace;
-margin-top:20px;
-margin-left:27px;
+
+.click button{
+	align-self:flex-end;
+	height:60px;
+	width:150px;
+	margin-right:43px;
+
+	background:none;
+	outline:none;
+	color:black;
+	border:1.5px solid black;
+	font-family: 'Courier Prime', monospace;
+	font-size:20px;
 }
+
+.click:active{
+	background-color:black;
+}
+
+
 
 h1{
 		color:black;
